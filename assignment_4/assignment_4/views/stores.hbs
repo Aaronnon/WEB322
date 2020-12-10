@@ -1,0 +1,25 @@
+<div class="row box-p">
+    <div class="col-md-12 table-responsive">
+        <h2 style="font-family: 'Press Start 2P';text-align: center;">Stores</h2>
+        <hr />
+        <table class="table">
+            <tr>
+                <th>Store ID</th>
+                <th>Store Name</th>
+                <th>Store Phone</th>
+                <th>Store Address</th>
+            </tr>
+
+            {{#each stores}}
+            <tr>
+                <td>{{id}}</td>
+                <td><a href="/cars?make={{retailer}}">{{retailer}}</a></td>
+                <td><a href="tel:{{phone}}">{{phone}}</a></td>
+                <td>{{address}}</td>
+
+            </tr>
+            {{/each}}
+        </table>
+    </div>
+</div>
+

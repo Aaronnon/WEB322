@@ -1,0 +1,26 @@
+<div class="row box-p">
+    <div class="col-md-12">
+        <h2 style="font-family: 'Press Start 2P';text-align: center;">Cars</h2>
+        <hr />
+        <table class="table">
+            <tr>
+                <th>Car ID</th>
+                <th>Car Make</th>
+                <th>Car Model</th>
+                <th>Car Year</th>
+                <th>Car VIN</th>
+            </tr>
+
+            {{#each cars}}
+            <tr>
+                <td>{{id}}</td>
+                <td><a href="/stores?retailer={{make}}">{{make}}</a></td>
+                <td>{{model}}</td>
+                <td><a href="/cars?year={{year}}">{{year}}</a></td>
+                <td><a href="/people?vin={{vin}}">{{vin}}</a></td>
+
+            </tr>
+            {{/each}}
+        </table>
+    </div>
+</div>

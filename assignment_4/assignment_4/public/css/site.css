@@ -1,0 +1,119 @@
+p {
+    margin-top: 10px;
+    line-height: 26px;
+    font-family: 'Sawarabi Mincho', sans-serif;
+}
+
+.navbar-brand {
+    text-shadow: 5px 5px 5px #bbb;
+}
+
+#move {
+    font-family: 'Press Start 2P', cursive;
+    font-weight: bold;
+    position: absolute;
+    text-shadow: 5px 5px 5px #bbb;
+    transform: rotate(0deg);
+    animation: down 2s linear .5s infinite alternate;
+}
+
+@keyframes down {
+    from {
+        left: 10px;
+    }
+    to {
+        left: 70px;
+    }
+}
+
+.navbar {
+    width: 100%;
+    z-index: 3;
+    margin-bottom: -52px;
+}
+
+.navbar, .nav {
+    color: black;
+    font-size: 18px;
+    ;
+}
+
+.container {
+    padding-top: 90px;
+}
+
+.navbar-nav .active a {
+    font-weight: bold;
+}
+
+.navbar-nav li:hover {
+    z-index: 2;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    border-radius: 3px;
+    transition: all 0.2s;
+}
+
+.name {
+    font-size: 23px;
+    font-family: 'Sawarabi Mincho', sans-serif;
+}
+
+.navbar-nav {
+    color: black;
+}
+
+.box-p{
+    padding: 3px 5px 3px 18px;
+    margin: 10px 0 3px 5px;
+    width: 100%;
+    height: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    background-color: #eee;
+    box-shadow: 0 0 6px;
+}
+
+body{
+    padding: 3px 5px 3px 18px;
+    margin: 3px 0 3px 5px;
+    position: relative;
+    line-height: 24px;
+    color: #333;
+    cursor: default;
+    height: 900px;
+    border-radius: 3px;
+    background-color: #e4e4e4;
+    background-image: linear-gradient(to bottom, #f4f4f4 20%, #f0f0f0 50%, #e8e8e8 52%, #eee 100%);
+    font-size: 12px;
+    color: #666;
+}
+
+.col-md-4 img{
+    width: 500px;
+    box-shadow: 0 0 10px black;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+/* .table-responsive tr{
+    border-bottom: 1px #e0e0eb solid;
+    padding: 5px 0 5px 0;
+}
+
+.table-responsive th{
+
+} */
+
+.table a:hover{
+    transition: all .5s;
+    color: red;
+}
+
+.bigContainer{
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 3;
+    position: fixed;
+    box-shadow: 0 0 10px;
+}

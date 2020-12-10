@@ -1,0 +1,81 @@
+<div class="row box-p">
+    <div class="col-md-12">
+        {{#each person}}
+        <h2 style="font-family: 'Press Start 2P';text-align: center;">{{first_name}} {{ last_name}} - Person: {{ id}}</h2>
+        <hr />
+        <form method="post" action="/person/update">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="first_name">First Name:</label>
+                            <input class="form-control" id="first_name" name="first_name" type="text"
+                                value="{{first_name}}" />
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="last_name">Last Name:</label>
+                            <input class="form-control" id="last_name" name="last_name" type="text"
+                                value="{{last_name}}" />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row" >
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="id" style="display: none;">ID:</label>
+                            <input class="form-control" id="id" name="id" type="hidden"
+                                value="{{id}}" />
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="row" >
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="phone">Phone:</label>
+                            <input class="form-control" id="phone" name="phone" type="text"
+                                value="{{phone}}" />
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div class="row" >
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <label for="street">Address (Street):</label>
+                            <input class="form-control" id="street" name="address" type="text"
+                                value="{{address}}" />
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <label for="city">Address (City):</label>
+                            <input class="form-control" id="city" name="city" type="text"
+                                value="{{city}}" />
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div class="row" >
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <label for="vin">Person’s Vin Number:</label>
+                            <input class="form-control" id="vin" name="vin" type="text"
+                                value="{{vin}}" />
+                        </div>
+                    </div>
+                    
+                </div>
+            </fieldset>
+            <hr />
+            <input type="submit" class="btn btn-primary pull-right" value="Update Person" /><br /><br /><br />
+        </form>
+    </div>
+    {{/each}}
+</div>

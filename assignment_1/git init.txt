@@ -1,0 +1,19 @@
+git init
+create git repo >locally
+
+git add *
+add all
+change to staging Area
+
+
+git commit -m" wdadadadawk"
+apply change to git what change
+
+git push heroku master
+move changes from local to cloud
+
+
+
+////////
+init
+create git repo >locally
