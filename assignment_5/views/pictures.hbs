@@ -1,0 +1,15 @@
+<div class="row box-p">
+    <div class="col-md-12">
+        <h2 style="font-family: 'Press Start 2P';text-align: center;">Pictures <a href="/pictures/add" class="btn btn-success pull-right">Add New Picture</a> </h2>
+        <hr />
+    </div>
+    <div class="col-md-4" style="width: 100%;">
+        {{#each pictures}}
+        <img src="/pictures/uploaded/{{this}}" class="img-responsive img-thumbnail" />
+        {{else}}
+        <div class="col-md-12 text-center middle">
+            <strong>No Pictures Available</strong>
+        </div>
+        {{/each}}
+    </div>
+</div>

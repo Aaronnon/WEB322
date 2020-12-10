@@ -1,0 +1,71 @@
+
+p{
+    margin-top: 10px;
+    line-height:26px;
+    font-family: 'Sawarabi Mincho', sans-serif;
+}
+
+.navbar-brand{
+    text-shadow: 5px 5px 5px #bbb;
+    
+}
+
+#move{
+    
+    font-family: 'Press Start 2P', cursive;
+    font-weight: bold;
+    position: absolute;
+    
+    
+    text-shadow: 5px 5px 5px #bbb;
+    transform: rotate(0deg);
+    animation: down 2s linear .5s infinite alternate;
+    
+    
+}
+
+@keyframes down{
+    from{
+        left:10px;
+    }
+    to{left:70px; }
+}
+
+.movep{
+    padding-top: 80px;
+}
+
+.navbar, .nav{
+    background-color: cornflowerblue;
+    color: black;
+    font-size: 18px;;
+    
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover{
+    background-color: cornflowerblue;
+    color: black;
+    font-size: 20px;
+}
+
+.name{
+    font-size: 23px;
+    font-family: 'Sawarabi Mincho', sans-serif;
+}
+
+.navbar-nav{
+    color: black;
+}
+
+body{
+    height: 1200px;
+    background-image: radial-gradient(farthest-corner at 20% 20%,#7bbebe,#7171b7);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.move_up{
+    padding-top: 53px;
+
+}

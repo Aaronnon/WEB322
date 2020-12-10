@@ -1,0 +1,34 @@
+<div class="row box-p">
+    <div class="col-md-12">
+        <h2 style="font-family: 'Press Start 2P';text-align: center;">Cars<a href="/cars/add" class="btn btn-success pull-right">Add New Car</a> </h2>
+        <hr />
+        <table class="table">
+            <tr>
+                
+                <th>Car Make</th>
+                <th>Car Model</th>
+                <th>Car Year</th>
+                <th>Car VIN</th>
+            </tr>
+
+            {{#each cars}}
+            <tr>
+                
+                <td><a href="/stores?retailer={{make}}">{{make}}</a></td>
+                <td><a href="/car/{{make}}={{make}}"></a>{{model}}</td>
+                <td><a href="/cars?year={{year}}">{{year}}</a></td>
+                <td><a href="/car/{{vin}}">{{vin}}</a></td> 
+                <td><a href="/cars/delete/{{vin}}" class="btn btn-danger">remove</a></td>
+            </tr>
+
+
+            {{/each}}
+        </table>
+
+         {{#unless cars}}
+        <div class="col-md-12 text-center">
+            <strong>{{message}}</strong>
+        </div>
+        {{/unless}}
+    </div>
+</div>
